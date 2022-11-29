@@ -1,17 +1,17 @@
-##About
+## About
 
 Meet App is a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.
 
-##Key Features:
+## Key Features:
 
-● Filter events by city.
-● Show/hide event details.
-● Specify number of events.
-● Use the app when offline.
-● Add an app shortcut to the home screen.
-● View a chart showing the number of upcoming events by city.
++ Filter events by city.
++ Show/hide event details.
++ Specify number of events.
++ Use the app when offline.
++ Add an app shortcut to the home screen.
++ View a chart showing the number of upcoming events by city.
 
-##Key Features in detail:
+## Key Features in detail:
 
 **Feature 1: Filter events by city**
 
@@ -100,4 +100,4 @@ When the user wants to view data regarding future events
 Then the desired visualisation chart will be displayed
 
 
-[Link to Meet App] (https://franciscodiego64.github.io/meet/)
+[Link to Meet App](https://franciscodiego64.github.io/meet/)
