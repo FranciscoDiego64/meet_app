@@ -19,7 +19,7 @@ import NProgress from 'nprogress';
   };
 
 
-  const checkToken = async (accessToken) => {
+  export const checkToken = async (accessToken) => {
     const result = await fetch(
       `https://www.googleapis.com/oauth2/v1/tokeninfo?access_token=${accessToken}`
     )
@@ -49,6 +49,7 @@ import NProgress from 'nprogress';
   
     if (token) {
       removeQuery();
+      // eslint-disable-next-line
       const url = 'https://zjdjac3o4m.execute-api.eu-central-1.amazonaws.com/dev/api/get-events' + '/' + token;
       const result = await axios.get(url);
       if (result.data) {
@@ -78,6 +79,7 @@ import NProgress from 'nprogress';
   const getToken = async (code) => {
     const encodeCode = encodeURIComponent(code);
     const { access_token } = await fetch(
+      // eslint-disable-next-line
       'https://zjdjac3o4m.execute-api.eu-central-1.amazonaws.com/dev/api/token' + '/' + encodeCode
     )
       .then((res) => {
