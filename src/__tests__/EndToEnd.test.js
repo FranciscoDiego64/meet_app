@@ -32,7 +32,7 @@ describe('show/hide an event details', () => {
 
         const eventDetails = await page.$('.event .event__Details');
         expect(eventDetails).toBeNull();
-        browser.close();
+        
 
     });
 
@@ -40,7 +40,7 @@ describe('show/hide an event details', () => {
 
         const eventDetails = await page.$('.event .event__Details');
         expect(eventDetails).toBeDefined();
-        browser.close();
+        
 
     });
 

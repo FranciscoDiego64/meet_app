@@ -5,7 +5,7 @@ import { ErrorAlert } from './Alert';
 class NumberOfEvents extends Component {
   state = {
     numberOfEvents: 32,
-    infoText: '',
+    errorText: '',
   };
 
   handleInputChanged = (event) => {
@@ -18,7 +18,7 @@ class NumberOfEvents extends Component {
     } else {
       this.setState({
         numberOfEvents: event.target.value,
-        infoText: '',
+        errorText: '',
       });
     }
 
@@ -41,7 +41,7 @@ class NumberOfEvents extends Component {
           </label>
 
           <div>
-            <ErrorAlert text={this.state.infoText} />
+            <ErrorAlert text={this.state.errorText} />
           </div>
               
         </div>
