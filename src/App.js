@@ -99,7 +99,7 @@ render() {
   return (
     <div className="App">
       <h1>Meet App</h1>
-      <h4>Choose your nearest city</h4>
+      <h4>Choose your city</h4>
       <div className="OfflineAlert">
         {!navigator.onLine && (
           <OfflineAlert
